@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .btn-submit {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+
+
+        .pexels-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML5 Elements and Forms</h1>
+
+    <section>
+        <h2>Items </h2>
+        <ol type="I">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Image</h2>
+
+        <img class="classroom-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToibm4564Mat-3VQh3rWAyBFG-at9jBk1adQ&s"
+            alt="Students in Class" style="width: 100%; max-width: 600px; height: auto;">
+
+    </section>
+
+    <section>
+        <h2> Names </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wambui Njeri</td>
+                    <td>Ngong Road, Nairobi</td>
+                    <td>(254) 701-123-456</td>
+                    <td>wambui.njeri@example.com</td>
+                </tr>
+                <tr>
+                    <td>John Ochieng</td>
+                    <td>Parklands, Nairobi</td>
+                    <td>(254) 710-234-567</td>
+                    <td>john.ochieng@example.com</td>
+                </tr>
+                <tr>
+                    <td>Grace Akinyi</td>
+                    <td>Kilimani, Nairobi</td>
+                    <td>(254) 711-345-678</td>
+                    <td>grace.akinyi@example.com</td>
+                </tr>
+                <tr>
+                    <td>Peter Kimani</td>
+                    <td>Thika Road, Nairobi</td>
+                    <td>(254) 712-456-789</td>
+                    <td>peter.kimani@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary Mwende</td>
+                    <td>Westlands, Nairobi</td>
+                    <td>(254) 713-567-890</td>
+                    <td>mary.mwende@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    I want to receive newsletters
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+    <section>
+        <h2> Learn Swahili</h2>
+
+
+        <h3>Learn Basic Swahili Phrases</h3>
+        <audio controls>
+
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <h3>Learn Swahili Vocabulary</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e4eeMi5OT6Y" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+</body>
+
+</html>

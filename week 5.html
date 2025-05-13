@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM Manipulation</title>
+    <link rel="stylesheet" href="week 5.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dynamic DOM Manipulation</h1>
+    </header>
+
+    <section id="content">
+        <article>
+            <h2>Change Text Content</h2>
+            <p id="text-content">This is a paragraph. Click the button below to change the text.</p>
+            <button onclick="changeText()">Change Text</button>
+        </article>
+
+        <article>
+            <h2>Modify CSS Styles</h2>
+            <p id="styled-text">This paragraph's color and font size will change when you click the button.</p>
+            <button onclick="modifyStyles()">Change Style</button>
+        </article>
+
+        <article>
+            <h2>Add or Remove Element</h2>
+            <button onclick="toggleElement()">Toggle Paragraph</button>
+            <div id="dynamic-element"></div>
+        </article>
+    </section>
+
+    <script src="week 5.js"></script>
+</body>
+
+</html>
